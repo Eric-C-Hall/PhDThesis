@@ -35,7 +35,6 @@
 
 \usepackage{multirow}
 
-
 \renewcommand*{\backref}[1]{}
 \renewcommand*{\backrefalt}[4]{
   \ifcase #1 %
@@ -47,12 +46,7 @@
   \fi
 }
 
-
-
-
-\input{macros}            
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Preamble
+\input{macros}
 \title{Formalizing Turbo Codes using HOL4}
 \author{Eric Hall}
 \date{\today}
@@ -61,37 +55,25 @@
 
 \makeindex
 \begin{document}
-%\doparttoc
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Title page
+
 \pagestyle{empty}
 \thispagestyle{empty}
 \input{titlepage}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Here begin the preliminaries
 \input{frontmatter}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Dedication
-\cleardoublepage
-\pagestyle{empty}
-\input{dedication}
+%\cleardoublepage
+%\pagestyle{empty}
+%\input{dedication}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Acknowledgements
 \cleardoublepage
 \pagestyle{empty}
 \input{ack}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Abstract
 \cleardoublepage
 \pagestyle{headings}
 \input{abstract}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Table of contents
 \cleardoublepage
 \pagestyle{headings}
 \markboth{Contents}{Contents}
@@ -99,22 +81,16 @@
 \listoffigures
 \listoftables
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Here begins the main text
 \mainmatter
 
-%% Introduction
 \input{intro}
-
-%% Chapters
 \input{background}
-\input{design}
-\input{methodology}
-\input{results}
+\input{convolutionalcodes}
+\input{turbocodes}
+\input{errorbounds}
+\input{executable}
+\input{hardware}
 \input{conclusion}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Here begins the end matter
 
 %%\input{appendix}
 
